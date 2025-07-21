@@ -1,1 +1,65 @@
+Verilog vs SystemVerilog – Key Differences
+1. Purpose
+Verilog: Mainly used for RTL design and synthesis.
 
+SystemVerilog: Used for both design and advanced verification.
+
+2. Standard
+Verilog: IEEE 1364 (1995/2001).
+
+SystemVerilog: IEEE 1800 (2005).
+
+3. Data Types
+Verilog: Basic types – wire, reg.
+
+SystemVerilog: Rich types – logic, bit, int, byte, enum, struct, union.
+
+4. Procedural Blocks
+Verilog: Uses always, initial.
+
+SystemVerilog: Adds always_comb, always_ff, always_latch for clarity.
+
+5. Object-Oriented Programming (OOP)
+Verilog: No OOP support.
+
+SystemVerilog: Supports class, inheritance, polymorphism, encapsulation.
+
+6. Randomization
+Verilog: Not supported.
+
+SystemVerilog: Supports constrained random generation using rand, constraint.
+
+7. Functional Coverage
+Verilog: Not available.
+
+SystemVerilog: Allows defining covergroup, coverpoint, and cross coverage.
+
+8. Assertions
+Verilog: Does not support assertions.
+
+SystemVerilog: Supports SystemVerilog Assertions (SVA) for design checking.
+
+9. Interfaces
+Verilog: Signals are passed individually between modules.
+
+SystemVerilog: Supports interface and modport for grouped signal connections.
+
+10. Testbench Capabilities
+Verilog: Simple, static testbenches.
+
+SystemVerilog: Advanced, reusable, scalable testbenches using UVM.
+
+11. Packages and Importing
+Verilog: No package system.
+
+SystemVerilog: Allows use of package and import to organize code.
+
+12. Synthesis Support
+Verilog: Fully synthesizable.
+
+SystemVerilog: Mostly synthesizable (some verification features are not).
+
+13. Tool Support
+Verilog: Supported in all EDA tools.
+
+SystemVerilog: Supported in modern tools like VCS, QuestaSim, Xcelium
